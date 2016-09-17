@@ -13,7 +13,7 @@ public class GetAll {
                 } catch (InterruptedException ie) {
                 }
                 System.out.println(GetCPU.getCPU("firefox") + " " + GetMem.getMem("firefox") + " " + GetSystemCPU
-                        .getSystemCPU() + "  " + GetSystemMem.getSystemMem());
+                        .getSystemCPU() + " " + GetSystemMem.getSystemMem());
             }
         } catch (IOException e) {
             e.printStackTrace();
