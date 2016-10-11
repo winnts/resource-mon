@@ -1,6 +1,6 @@
-package Resources;
+package Processing;
 
-import Resources.Entity.AllResources;
+import Entity.AllResources;
 
 import java.io.IOException;
 import java.util.ArrayList;

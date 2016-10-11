@@ -1,4 +1,4 @@
-package Resources;
+package Processing;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.OperatingSystemMXBean;

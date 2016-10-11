@@ -1,6 +1,6 @@
 package WebApp;
 
-import Resources.Entity.AllResources;
+import Entity.AllResources;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;

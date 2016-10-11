@@ -1,4 +1,4 @@
-package Resources.Entity;
+package Entity;
 
 /**
  * Created by adyachenko on 11.10.16.

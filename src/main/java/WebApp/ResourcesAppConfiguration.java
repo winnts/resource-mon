@@ -12,7 +12,7 @@ public class ResourcesAppConfiguration extends Configuration {
     private String template;
 
     @NotEmpty
-    private String defaultName = "monitorapp";
+    private String defaultName = "resource-app";
 
     @JsonProperty
     public String getTemplate() {

@@ -1,6 +1,6 @@
 package WebApp;
 
-import Resources.GetAll;
+import Processing.GetAll;
 import com.codahale.metrics.annotation.Timed;
 
 import javax.ws.rs.GET;
