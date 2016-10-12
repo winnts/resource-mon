@@ -13,21 +13,10 @@ public class GetCPU {
     public static String getCPU(String process) throws IOException {
         List<String> processCPU = new ArrayList<String>();
         Runtime rt = Runtime.getRuntime();
-        System.out.println("Process: " + process);
-        Process procPid = rt.exec("pidof \"" + process + "\"");
-        BufferedReader stdInputPid = new BufferedReader(new
-                InputStreamReader(procPid.getInputStream()));
-        String sPid;
-        sPid = stdInputPid.readLine();
-
-        System.out.println("PID: " + sPid);
-
-        if (sPid == null) {sPid = "55555555";}
-        Process proc = rt.exec("ps -o %cpu -p " + sPid);
+        Process proc = rt.exec("ps -o %cpu -p " + GetPid.getPid(process));
         BufferedReader stdInput = new BufferedReader(new
                 InputStreamReader(proc.getInputStream()));
         String s;
-
         while ((s = stdInput.readLine()) != null) {
             processCPU.add(s);
         }

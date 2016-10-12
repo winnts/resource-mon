@@ -13,16 +13,7 @@ public class GetMem {
     public static String getMem(String process) throws IOException {
         List<String> processMem = new ArrayList<String>();
         Runtime rt = Runtime.getRuntime();
-
-        Process procPid = rt.exec("pidof \"" + process + "\"");
-        BufferedReader stdInputPid = new BufferedReader(new
-                InputStreamReader(procPid.getInputStream()));
-        String sPid;
-        sPid = stdInputPid.readLine();
-
-        if (sPid == null) {sPid = "55555555";}
-
-        Process proc = rt.exec("ps -o rss -C " + sPid);
+        Process proc = rt.exec("ps -o rss -p " + GetPid.getPid(process));
         BufferedReader stdInput = new BufferedReader(new
                 InputStreamReader(proc.getInputStream()));
         String s;
